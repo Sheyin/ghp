@@ -1,0 +1,124 @@
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e9ecef;
+}
+
+nav > a {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-right: 30px;
+	text-decoration: none;
+	color: #465059;
+}
+
+#how-it-works {
+	height: 700px;
+	background-image: url("https://placehold.co/1321x1240");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+}
+
+#how-it-works > div {
+	width: 50%;
+	margin-left: 15px;
+}
+
+#how-it-works > img {
+	height: 300px;
+}
+
+#how-can-we-help-you {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #eeeeee;
+}
+
+#how-can-we-help-you > div {
+	display: flex;
+	flex-direction: row;
+}
+
+.section-split-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 20px;
+}
+
+.icon {
+	width: 50px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	box-sizing: border-box;
+	margin: 20px 0 20px 0;
+	font-family: "Assistant", sans-serif;
+}
+
+section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section h1 {
+	color: #333e48;
+	margin: 0 0 10px 0;
+	font-size: 2.6em;
+}
+
+section p {
+	color: #333e48;
+	margin: 0px;
+}
+
+aside {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+div > h2 {
+	margin: 0 0 10px 0;
+	font-weight: bolder;
+}
+
+div > p {
+	margin: 0px;
+}
+
+aside > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	column-gap: 10px;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+button {
+	width: 200px;
+	height: 70px;
+	color: #e9ecef;
+	font-size: 1.2em;
+	background-color: #981e32;
+	border-radius: 10px;
+}

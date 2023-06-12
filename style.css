@@ -2,8 +2,7 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin-bottom: 20px;
-	margin-left: 10px;
+	padding-left: 10px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #e9ecef;
 	width: 100%;
@@ -32,11 +31,12 @@ aside {
 	flex-direction: row;
 	justify-content: space-between;
 	gap: 30px;
+	align-items: center;
 }
 
 #how-it-works {
 	height: 700px;
-	background-image: url("images/patty-brito-Y-3Dt0us7e0-unsplash-1080x.jpg");
+	background-image: url("./images/patty-brito-Y-3Dt0us7e0-unsplash-1080x.jpg");
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: contain;
@@ -55,7 +55,7 @@ aside {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 30px;
+	margin-top: 0px;
 	padding-bottom: 30px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -76,10 +76,8 @@ aside {
 
 .icon {
 	width: 50px;
-}
-
-.emoji {
-	font-size: 4em;
+	border: solid 2px black;
+	border-radius: 30%;
 }
 
 .heading {
@@ -149,4 +147,7 @@ button {
 	font-size: 1.2em;
 	background-color: #981e32;
 	border-radius: 10px;
+}
+
+hr {
 }

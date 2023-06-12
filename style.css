@@ -1,18 +1,32 @@
 nav {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	padding-left: 10px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #e9ecef;
-	width: 100%;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	/*border-bottom: 1px solid #e9ecef;*/
+	border-top: 20px solid #001f45;
+	background-color: #ffffff;
+	box-shadow: 0 2px 10px #a5d4e0;
+	/*box-shadow: 5px 4px 2px rgb(236, 236, 236);*/
 }
 
 nav a {
 	font-size: 1.5em;
 	font-weight: bold;
 	text-decoration: none;
-	color: #465059;
+	font-family: "Roboto", sans-serif;
+	color: #001f45;
+	/*color: #468594;*/
+}
+
+nav a:hover {
+	color: #f84654;
 }
 
 aside {
@@ -21,9 +35,7 @@ aside {
 }
 
 .links {
-	max-width: 50%;
-	margin-left: 30px;
-	margin-right: 30px;
+	/*max-width: 50%;*/
 }
 
 .flex-row {
@@ -32,6 +44,10 @@ aside {
 	justify-content: space-between;
 	gap: 30px;
 	align-items: center;
+}
+
+.grey-bg {
+	background-color: #f2f6f7;
 }
 
 #how-it-works {
@@ -56,10 +72,6 @@ aside {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 0px;
-	padding-bottom: 30px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background-color: #eeeeee;
 }
 
 #how-can-we-help-you > div {
@@ -76,25 +88,30 @@ aside {
 
 .icon {
 	width: 50px;
-	border: solid 2px black;
 	border-radius: 30%;
 }
 
 .heading {
 	font-family: "Roboto", sans-serif;
+	/*color: #468594;*/
+	color: #001f45;
 	margin: 0;
 	padding: 0;
+	cursor: default;
 }
 
 html {
 	height: 100%;
+	box-sizing: border-box;
 }
 
 body {
 	height: 100%;
 	box-sizing: border-box;
-	margin: 20px 0 20px 0;
-	font-family: "Assistant", sans-serif;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	margin-top: 0;
+	color: #001f45;
 }
 
 section {
@@ -105,20 +122,21 @@ section {
 }
 
 section h1 {
-	color: #333e48;
+	/*color: #333e48;*/
 	margin: 0 0 10px 0;
 	font-size: 2.6em;
 }
 
 section p {
-	color: #333e48;
+	/*color: #333e48;*/
 	margin: 0px;
 }
 
 aside {
 	display: flex;
 	flex-direction: row;
-	margin-top: 20px;
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 div > h2 {
@@ -134,19 +152,22 @@ aside > div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	column-gap: 10px;
+	gap: 10px;
 	align-items: center;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin: auto;
+	flex: 1 1 0px;
 }
 
 button {
-	width: 200px;
-	height: 70px;
-	color: #e9ecef;
+	width: 180px;
+	height: 48px;
+	color: #001f45;
 	font-size: 1.2em;
-	background-color: #981e32;
-	border-radius: 10px;
+	background-color: #99e6fa;
+	border-radius: 16px;
+	border: 0;
+	margin-top: 16px;
+	cursor: pointer;
 }
 
 hr {

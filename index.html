@@ -1,11 +1,12 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
 		<title>Global Healthcare Professionals, Inc.</title>
 		<link rel="stylesheet" href="./splashstyle.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Roboto&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Lobster&family=Noto+Sans+HK:wght@500&family=Roboto&display=swap"
 			rel="stylesheet" />
 	</head>
 
@@ -20,14 +21,89 @@
 			</div>
 
 			<div id="button-grouping">
-				<button class="splash-item choice-button">I'm an employer</button>
-				<button class="splash-item choice-button">I'm a nurse</button>
+				<button class="splash-item visitor-type-button" name="employer">I'm an employer</button>
+				<button class="splash-item visitor-type-button" name="nurse">I'm a nurse</button>
 			</div>
 		</div>
 
 		<!-- this should be visible? after the iniitial selection is made-->
 		<main>
-			<div id="">Main content stuff here</div>
+			<div class="banner" id="banner1">Top-notch nurses are waiting for you!</div>
+
+			<section>
+				<h1>Who are we?</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+					ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Quis
+					imperdiet massa tincidunt nunc pulvinar sapien et ligula.
+				</p>
+			</section>
+
+			<aside>
+				<h1>
+					What makes <span class="red">us</span>
+					stand out?
+				</h1>
+				<div class="icon-family">
+					<div>
+						<img src="./icons/first-aid-2789562_960_720.png" class="icon" alt="" />
+						<p>Welcoming candidates as family.</p>
+					</div>
+
+					<div>
+						<img src="./icons/bandage-5118693_960_720.png" class="icon" alt="" />
+						<p>Compassion and not just compensation.</p>
+					</div>
+
+					<div>
+						<img src="./icons/thermometer-5118701_960_720.png" class="icon" alt="" />
+						<p>Teamwork and ongoing support.</p>
+					</div>
+				</div>
+			</aside>
+
+			<!--
+	Who are we? (image: Outline of faces with ??? I don't really know at this point).
+
+Testimonials; personal journey
+-->
+
+			<div>
+				<h1>Why <span class="red">Boston?</span></h1>
+				<ul type="disc">
+					<li>Not too big.</li>
+					<li>Large educated population</li>
+					<li>Safe place to raise a family?</li>
+				</ul>
+			</div>
+
+			<div>
+				<h1>Mission and Vision</h1>
+				<p>Make your dreams come true?</p>
+			</div>
+
+			<div id="contact-us">
+				<h1>Contact Us</h1>
+				<p>We're here for you.</p>
+				<form>
+					<label for="firstname">First Name:</label>
+					<input name="firstname" id="firstname" type="text" />
+
+					<label for="lastname">Last Name:</label>
+					<input name="lastname" id="lastname" type="text" />
+
+					<label for="email">E-mail:</label>
+					<input name="email" id="email" type="text" />
+
+					<label for="phone">Phone:</label>
+					<input name="phone" id="phone" type="text" />
+
+					<button name="uploadcv" id="uploadcv">Upload CV</button>
+					<label for="uploadcv">Imaginary filename here</label>
+
+					<button id="submit-button" class="span-2-rows">Submit resume</button>
+				</form>
+			</div>
 		</main>
 
 		<script src="splashscript.js"></script>

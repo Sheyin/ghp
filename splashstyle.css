@@ -14,8 +14,8 @@
 aside {
 	display: flex;
 	flex-direction: column;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 8vh;
+	margin-bottom: 8vh;
 	padding-left: 16px;
 	padding-right: 16px;
 }
@@ -58,12 +58,12 @@ h1 {
 }
 
 .banner {
-	min-height: 10%;
+	min-height: 15vh;
 	color: #000000;
 	font-size: 2.5em;
 	margin: auto;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -137,7 +137,7 @@ section {
 
 #splash-logo {
 	max-width: calc(100% - 48px);
-	max-height: calc(100% - 16px);
+	max-height: 500px;
 	border-radius: 40px;
 	padding: 8px;
 	display: block;
@@ -158,7 +158,7 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	border-bottom: 4px solid black;
 }
 
@@ -187,7 +187,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 80%;
+	min-height: 90%;
 	width: 100%;
 	margin: 0;
 	font-family: "Assistant", sans-serif;

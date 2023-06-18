@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+		<meta name="robots" content="noindex" />
 		<title>Global Healthcare Professionals, Inc.</title>
 		<link rel="stylesheet" href="./splashstyle.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +37,7 @@
 			<div class="banner" id="banner1">Top-notch nurses are waiting for you!</div>
 
 			<section>
-				<h1>Who are we?</h1>
+				<h1>Who are <span class="red">we</span>?</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 					ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Quis
@@ -73,7 +75,7 @@ Testimonials; personal journey
 -->
 
 			<div>
-				<h1>Why <span class="red">Boston?</span></h1>
+				<h1>Why <span class="red">Boston</span>?</h1>
 				<ul type="disc">
 					<li>Not too big.</li>
 					<li>Large educated population</li>
@@ -82,14 +84,14 @@ Testimonials; personal journey
 			</div>
 
 			<div>
-				<h1>Mission and Vision</h1>
+				<h1>Mission and <span class="red">Vision</span></h1>
 				<p>Make your dreams come true?</p>
 			</div>
 
 			<div id="contact-us">
 				<h1>Contact Us</h1>
 				<p>We're here for you.</p>
-				<form>
+				<form action="upload.php" method="post" enctype="multipart/form-data">
 					<label for="firstname">First Name:</label>
 					<input name="firstname" id="firstname" type="text" />
 
@@ -102,8 +104,8 @@ Testimonials; personal journey
 					<label for="phone">Phone:</label>
 					<input name="phone" id="phone" type="text" />
 
-					<button name="uploadcv" id="uploadcv">Upload CV</button>
-					<label for="uploadcv">Imaginary filename here</label>
+					<input type="file" name="fileToUpload" id="fileToUpload" />
+					<label for="fileToUpload">Imaginary filename here</label>
 
 					<button id="submit-button" class="span-2-rows">Submit resume</button>
 				</form>

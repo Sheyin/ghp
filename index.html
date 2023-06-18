@@ -1,64 +1,111 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
 		<title>Global Healthcare Professionals, Inc.</title>
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./splashstyle.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Roboto&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Lobster&family=Noto+Sans+HK:wght@500&family=Roboto&display=swap"
 			rel="stylesheet" />
 	</head>
 
 	<body>
-		<nav class="flex-row">
-			<h1 class="heading">Global Healthcare Professionals, Inc.</h1>
-			<div class="flex-row links">
-				<a href="">What we do</a>
-				<a href="">Who we are</a>
-				<a href="">Contact us</a>
+		<div id="splash-screen">
+			<div id="splash-logo-stripe">
+				<img
+					src="./images/ghplogo.png"
+					alt="Global Healthcare Providers Logo"
+					id="splash-logo"
+					class="splash-item" />
 			</div>
-		</nav>
 
-		<section id="how-it-works" class="grey-bg">
-			<div>
-				<h1>Headline 1</h1>
+			<div id="button-grouping">
+				<button class="splash-item visitor-type-button" name="employer">I'm an employer</button>
+				<button class="splash-item visitor-type-button" name="nurse">I'm a nurse</button>
+			</div>
+		</div>
+
+		<!-- this should be visible? after the iniitial selection is made-->
+		<main>
+			<div class="banner" id="banner1">Top-notch nurses are waiting for you!</div>
+
+			<section>
+				<h1>Who are we?</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua.
+					ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Quis
+					imperdiet massa tincidunt nunc pulvinar sapien et ligula.
 				</p>
-			</div>
-		</section>
+			</section>
 
-		<aside class="flex-row">
-			<div>
-				<img src="./icons/first-aid-2789562_960_720.png" class="icon" alt="" />
-				<h2>Note 1</h2>
-				<p>Mauris sit amet massa vitae tortor condimentum lacinia.</p>
-			</div>
+			<aside>
+				<h1>
+					What makes <span class="red">us</span>
+					stand out?
+				</h1>
+				<div class="icon-family">
+					<div>
+						<img src="./icons/first-aid-2789562_960_720.png" class="icon" alt="" />
+						<p>Welcoming candidates as family.</p>
+					</div>
 
-			<div>
-				<img src="./icons/bandage-5118693_960_720.png" class="icon" alt="" />
-				<h2>Note 2</h2>
-				<p>Cursus mattis molestie a iaculis at erat pellentesque.</p>
-			</div>
+					<div>
+						<img src="./icons/bandage-5118693_960_720.png" class="icon" alt="" />
+						<p>Compassion and not just compensation.</p>
+					</div>
 
-			<div>
-				<img src="./icons/thermometer-5118701_960_720.png" class="icon" alt="" />
-				<h2>Note 3</h2>
-				<p>Viverra aliquet eget sit amet. Mauris pharetra et ultrices neque ornare aenean.</p>
-			</div>
-		</aside>
-
-		<section id="how-can-we-help-you" class="grey-bg">
-			<!--h2>Headline 2</h2-->
-			<div>
-				<img src="images/kristine-wook-leKEtUtpKCg-unsplash-500x.jpg" />
-				<div class="section-split-text">
-					<h2>Interested in joining us?</h2>
-					<p>We are always welcoming people who share our mission.</p>
-					<button>Apply now</button>
+					<div>
+						<img src="./icons/thermometer-5118701_960_720.png" class="icon" alt="" />
+						<p>Teamwork and ongoing support.</p>
+					</div>
 				</div>
+			</aside>
+
+			<!--
+	Who are we? (image: Outline of faces with ??? I don't really know at this point).
+
+Testimonials; personal journey
+-->
+
+			<div>
+				<h1>Why <span class="red">Boston?</span></h1>
+				<ul type="disc">
+					<li>Not too big.</li>
+					<li>Large educated population</li>
+					<li>Safe place to raise a family?</li>
+				</ul>
 			</div>
-		</section>
+
+			<div>
+				<h1>Mission and Vision</h1>
+				<p>Make your dreams come true?</p>
+			</div>
+
+			<div id="contact-us">
+				<h1>Contact Us</h1>
+				<p>We're here for you.</p>
+				<form>
+					<label for="firstname">First Name:</label>
+					<input name="firstname" id="firstname" type="text" />
+
+					<label for="lastname">Last Name:</label>
+					<input name="lastname" id="lastname" type="text" />
+
+					<label for="email">E-mail:</label>
+					<input name="email" id="email" type="text" />
+
+					<label for="phone">Phone:</label>
+					<input name="phone" id="phone" type="text" />
+
+					<button name="uploadcv" id="uploadcv">Upload CV</button>
+					<label for="uploadcv">Imaginary filename here</label>
+
+					<button id="submit-button" class="span-2-rows">Submit resume</button>
+				</form>
+			</div>
+		</main>
+
+		<script src="splashscript.js"></script>
 	</body>
 </html>

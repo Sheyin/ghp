@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Global Healthcare Professionals, Inc.</title>
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./splashstyle.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -10,55 +10,26 @@
 	</head>
 
 	<body>
-		<nav class="flex-row">
-			<h1 class="heading">Global Healthcare Professionals, Inc.</h1>
-			<div class="flex-row links">
-				<a href="">What we do</a>
-				<a href="">Who we are</a>
-				<a href="">Contact us</a>
-			</div>
-		</nav>
-
-		<section id="how-it-works" class="grey-bg">
-			<div>
-				<h1>Headline 1</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua.
-				</p>
-			</div>
-		</section>
-
-		<aside class="flex-row">
-			<div>
-				<img src="./icons/first-aid-2789562_960_720.png" class="icon" alt="" />
-				<h2>Note 1</h2>
-				<p>Mauris sit amet massa vitae tortor condimentum lacinia.</p>
+		<div id="splash-screen">
+			<div id="splash-logo-stripe">
+				<img
+					src="./images/ghplogo.png"
+					alt="Global Healthcare Providers Logo"
+					id="splash-logo"
+					class="splash-item" />
 			</div>
 
-			<div>
-				<img src="./icons/bandage-5118693_960_720.png" class="icon" alt="" />
-				<h2>Note 2</h2>
-				<p>Cursus mattis molestie a iaculis at erat pellentesque.</p>
+			<div id="button-grouping">
+				<button class="splash-item choice-button">I'm an employer</button>
+				<button class="splash-item choice-button">I'm a nurse</button>
 			</div>
+		</div>
 
-			<div>
-				<img src="./icons/thermometer-5118701_960_720.png" class="icon" alt="" />
-				<h2>Note 3</h2>
-				<p>Viverra aliquet eget sit amet. Mauris pharetra et ultrices neque ornare aenean.</p>
-			</div>
-		</aside>
+		<!-- this should be visible? after the iniitial selection is made-->
+		<main>
+			<div id="">Main content stuff here</div>
+		</main>
 
-		<section id="how-can-we-help-you" class="grey-bg">
-			<!--h2>Headline 2</h2-->
-			<div>
-				<img src="images/kristine-wook-leKEtUtpKCg-unsplash-500x.jpg" />
-				<div class="section-split-text">
-					<h2>Interested in joining us?</h2>
-					<p>We are always welcoming people who share our mission.</p>
-					<button>Apply now</button>
-				</div>
-			</div>
-		</section>
+		<script src="splashscript.js"></script>
 	</body>
 </html>

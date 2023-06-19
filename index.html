@@ -92,21 +92,21 @@ Testimonials; personal journey
 				<h1>Contact Us</h1>
 				<p>We're here for you.</p>
 				<form action="upload.php" method="post" enctype="multipart/form-data">
-					<label for="firstname">First Name:</label>
-					<input name="firstname" id="firstname" type="text" />
+					<label for="first_name">First Name:</label>
+					<input name="first_name" id="first_name" type="text" />
 
-					<label for="lastname">Last Name:</label>
-					<input name="lastname" id="lastname" type="text" />
+					<label for="last_name">Last Name:</label>
+					<input name="last_name" id="last_name" type="text" />
 
 					<label for="email">E-mail:</label>
-					<input name="email" id="email" type="text" />
+					<input name="email" id="email" type="email" />
 
 					<label for="phone">Phone:</label>
-					<input name="phone" id="phone" type="text" />
+					<input name="phone" id="phone" type="tel" />
 
-					<input type="file" name="fileToUpload" id="fileToUpload" />
+					<input type="file" name="resume" id="resume" />
 
-					<button id="submit-button" class="span-2-rows">Submit resume</button>
+					<input type="submit" value="Submit Resume" name="submit" id="submit-button" />
 				</form>
 			</div>
 		</main>

@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+		<meta name="robots" content="noindex" />
 		<title>Global Healthcare Professionals, Inc.</title>
 		<link rel="stylesheet" href="./splashstyle.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +16,7 @@
 		<div id="splash-screen">
 			<div id="splash-logo-stripe">
 				<img
-					src="./images/ghplogo.png"
+					src="./images/ghplogo_smaller.png"
 					alt="Global Healthcare Providers Logo"
 					id="splash-logo"
 					class="splash-item" />
@@ -35,7 +37,7 @@
 			<div class="banner" id="banner1">Top-notch nurses are waiting for you!</div>
 
 			<section>
-				<h1>Who are we?</h1>
+				<h1>Who are <span class="red">we</span>?</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 					ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Quis
@@ -49,19 +51,19 @@
 					stand out?
 				</h1>
 				<div class="icon-family">
-					<div>
+					<div class="icon-family-box">
 						<img src="./icons/first-aid-2789562_960_720.png" class="icon" alt="" />
-						<p>Welcoming candidates as family.</p>
+						<span>Welcoming candidates as family.</span>
 					</div>
 
-					<div>
+					<div class="icon-family-box">
 						<img src="./icons/bandage-5118693_960_720.png" class="icon" alt="" />
-						<p>Compassion and not just compensation.</p>
+						<span>Compassion and not just compensation.</span>
 					</div>
 
-					<div>
+					<div class="icon-family-box">
 						<img src="./icons/thermometer-5118701_960_720.png" class="icon" alt="" />
-						<p>Teamwork and ongoing support.</p>
+						<span>Teamwork and ongoing support.</span>
 					</div>
 				</div>
 			</aside>
@@ -73,7 +75,7 @@ Testimonials; personal journey
 -->
 
 			<div>
-				<h1>Why <span class="red">Boston?</span></h1>
+				<h1>Why <span class="red">Boston</span>?</h1>
 				<ul type="disc">
 					<li>Not too big.</li>
 					<li>Large educated population</li>
@@ -82,30 +84,29 @@ Testimonials; personal journey
 			</div>
 
 			<div>
-				<h1>Mission and Vision</h1>
+				<h1>Mission and <span class="red">Vision</span></h1>
 				<p>Make your dreams come true?</p>
 			</div>
 
 			<div id="contact-us">
 				<h1>Contact Us</h1>
 				<p>We're here for you.</p>
-				<form>
-					<label for="firstname">First Name:</label>
-					<input name="firstname" id="firstname" type="text" />
+				<form action="upload.php" method="post" enctype="multipart/form-data">
+					<label for="first_name">First Name:</label>
+					<input name="first_name" id="first_name" type="text" />
 
-					<label for="lastname">Last Name:</label>
-					<input name="lastname" id="lastname" type="text" />
+					<label for="last_name">Last Name:</label>
+					<input name="last_name" id="last_name" type="text" />
 
 					<label for="email">E-mail:</label>
-					<input name="email" id="email" type="text" />
+					<input name="email" id="email" type="email" />
 
 					<label for="phone">Phone:</label>
-					<input name="phone" id="phone" type="text" />
+					<input name="phone" id="phone" type="tel" />
 
-					<button name="uploadcv" id="uploadcv">Upload CV</button>
-					<label for="uploadcv">Imaginary filename here</label>
+					<input type="file" name="resume" id="resume" />
 
-					<button id="submit-button" class="span-2-rows">Submit resume</button>
+					<input type="submit" value="Submit Resume" name="submit" id="submit-button" />
 				</form>
 			</div>
 		</main>

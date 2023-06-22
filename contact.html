@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+		<meta name="robots" content="noindex" />
+		<title>Global Healthcare Professionals, Inc.</title>
+		<link rel="stylesheet" href="./style/base.css" />
+		<link rel="stylesheet" href="./style/form.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Lobster&family=Noto+Sans+HK:wght@500&family=Roboto&display=swap"
+			rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="banner" id="banner1">We're here for you.</div>
+
+		<section id="contact-us">
+			<h1>Contact Us</h1>
+
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+				<label for="first_name">First Name:</label>
+				<input name="first_name" id="first_name" type="text" />
+
+				<label for="last_name">Last Name:</label>
+				<input name="last_name" id="last_name" type="text" />
+
+				<label for="email">E-mail:</label>
+				<input name="email" id="email" type="email" />
+
+				<label for="phone">Phone:</label>
+				<input name="phone" id="phone" type="tel" />
+
+				<input type="file" name="resume" id="resume" />
+
+				<input type="submit" value="Contact Us" name="submit" id="submit-button" />
+			</form>
+		</section>
+	</body>
+</html>

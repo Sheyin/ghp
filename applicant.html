@@ -5,7 +5,6 @@
 		<meta name="robots" content="noindex" />
 		<title>Global Healthcare Professionals, Inc.</title>
 		<link rel="stylesheet" href="./style/base.css" />
-		<link rel="stylesheet" href="./style/form.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -15,13 +14,9 @@
 
 	<body>
 		<main>
-			<header class="main-padded-width">
-				<img src="./images/ghplogo4.png" alt="" />
-			</header>
-
 			<div class="banner main-padded-width" id="banner1">Welcoming candidates as family.</div>
 
-			<section class="main-padded-width">
+			<section>
 				<h1>Who are <span class="red">we</span>?</h1>
 				<p id="who-are-we-text">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -33,7 +28,7 @@
 				</p>
 			</section>
 
-			<section class="main-padded-width">
+			<section>
 				<h1>What do we <span class="red">do</span>?</h1>
 				<p id="who-are-we-text">
 					Integer eget aliquet nibh praesent tristique magna sit. Pharetra pharetra massa massa
@@ -46,12 +41,12 @@
 				</p>
 			</section>
 
-			<aside class="main-padded-width">
+			<aside>
 				<h1>
 					What makes <span class="red">us</span>
 					stand out?
 				</h1>
-				<div class="icon-family main-padded-width">
+				<div class="icon-family">
 					<div class="icon-family-box">
 						<img src="./icons/first-aid-2789562_960_720.png" class="icon" alt="" />
 						<span>Not too big.</span>
@@ -69,7 +64,7 @@
 				</div>
 			</aside>
 
-			<section class="main-padded-width">
+			<section>
 				<h1>Our <span class="red">vision</span></h1>
 				<p>
 					Ultricies tristique nulla aliquet enim tortor. Pulvinar sapien et ligula ullamcorper
@@ -83,28 +78,6 @@
 					egestas quis ipsum suspendisse ultrices. Accumsan sit amet nulla facilisi morbi tempus
 					iaculis urna.
 				</p>
-			</section>
-
-			<section id="contact-us" class="main-full-width">
-				<h1>Contact Us</h1>
-
-				<form action="upload.php" method="post" enctype="multipart/form-data">
-					<label for="first_name">First Name:</label>
-					<input name="first_name" id="first_name" type="text" />
-
-					<label for="last_name">Last Name:</label>
-					<input name="last_name" id="last_name" type="text" />
-
-					<label for="email">E-mail:</label>
-					<input name="email" id="email" type="email" />
-
-					<label for="phone">Phone:</label>
-					<input name="phone" id="phone" type="tel" />
-
-					<input type="file" name="resume" id="resume" />
-
-					<input type="submit" value="Submit Resume" name="submit" id="submit-button" />
-				</form>
 			</section>
 		</main>
 	</body>

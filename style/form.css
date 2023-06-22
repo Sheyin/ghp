@@ -1,17 +1,3 @@
-.banner {
-	min-height: 15vh;
-	color: #000000;
-	font-size: 2.5em;
-	margin: auto;
-	padding-top: 4vh;
-	padding-bottom: 4vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: "Lobster", cursive;
-	box-sizing: border-box;
-}
-
 #contact-us {
 	background-color: #d8e7fa;
 	border-top: 1px solid #a5d4e0;
@@ -20,6 +6,7 @@
 	margin-bottom: 8vh;
 	padding-top: 4vh;
 	padding-bottom: 4vh;
+	width: 100%;
 }
 
 form {
@@ -49,6 +36,14 @@ input {
 form label {
 	display: inline;
 	margin-right: 0;
+}
+
+section {
+	width: 100%;
+}
+
+body {
+	width: 100%;
 }
 
 @media only screen and (min-width: 600px) {

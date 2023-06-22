@@ -1,3 +1,25 @@
+const choiceButtons = Array.from(document.getElementsByClassName("visitor-type-button"));
+
+choiceButtons.forEach(button => button.addEventListener("click", visitorTypeSelection));
+const defaultExperienceType = "nurse";
+let experienceType = localStorage.getItem("experiencetype") || defaultExperienceType;
+
+// if none defined, maybe change to redirect to splash screen with only the choice
+// maybe a modal popup?
+function visitorTypeSelection(event) {
+	const buttonPressed = event.target.name || nurse;
+	if (buttonPressed === "employer") {
+		localStorage.setItem("experiencetype", "employer");
+		experienceType = "employer";
+	} else {
+		localStorage.setItem("experiencetype", "nurse");
+		experienceType = "nurse";
+	}
+}
+
+//setStringsBasedOnExperience();
+
+/*
 const strings = {
 	employer: {
 		banner1: "Top-notch nurses are waiting for you!",
@@ -25,23 +47,9 @@ const strings = {
 	},
 };
 
-const choiceButtons = Array.from(document.getElementsByClassName("visitor-type-button"));
-choiceButtons.forEach(button => button.addEventListener("click", visitorTypeSelection));
-const defaultExperienceType = "nurse";
-let experienceType = localStorage.getItem("experiencetype") || defaultExperienceType;
-setStringsBasedOnExperience();
 
-function visitorTypeSelection(event) {
-	const buttonPressed = event.target.name || nurse;
-	if (buttonPressed === "employer") {
-		localStorage.setItem("experiencetype", "employer");
-		experienceType = "employer";
-	} else {
-		localStorage.setItem("experiencetype", "nurse");
-		experienceType = "nurse";
-	}
-	setStringsBasedOnExperience();
-}
+
+
 
 function setStringsBasedOnExperience() {
 	const newText = strings[experienceType];
@@ -60,3 +68,4 @@ function setStringsBasedOnExperience() {
 	});
 	document.getElementById("visitor-choose-reasons").replaceChildren(...newNodes);
 }
+*/

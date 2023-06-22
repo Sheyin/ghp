@@ -8,10 +8,10 @@ body {
 	background-position: center;
 	background-size: cover;*/
 	width: 100vw;
-
 	margin: 0;
 	font-family: "Assistant", sans-serif;
 	background-color: #abd7eb;
+	box-sizing: border-box;
 }
 
 html {
@@ -24,25 +24,9 @@ main {
 	background-color: #fbfbf8;
 	height: 100%;
 	box-sizing: border-box;
-	width: 75vw;
 	margin-bottom: 0;
-}
-
-header {
-	background-color: fbfbf8;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	/* box-shadow: 2px 2px 5px #072a6c; */
-	/*border-bottom: 2px solid #a5d4e0; */
-	position: sticky;
-	top: 0;
-}
-
-header > img {
-	max-height: 5vh;
-	margin: 0;
+	padding-left: 2vw;
+	padding-right: 2vw;
 }
 
 .main-full-width {
@@ -52,6 +36,22 @@ header > img {
 .main-padded-width {
 	padding-left: 2vw;
 	padding-right: 2vw;
+}
+
+.banner {
+	min-height: 15vh;
+	color: #000000;
+	background-color: #fbfbf8;
+	font-size: 1.5em;
+	margin: auto;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Lobster", cursive;
+	box-sizing: border-box;
+	width: 100%;
 }
 
 .red-stripe-top {
@@ -143,11 +143,13 @@ soft blue: kindness : #ABD7EB
 		margin: auto;
 		flex: 1 1 0px;
 		font-size: 1.4em;
+		padding-left: 2vw;
+		padding-right: 2vw;
 	}
 
 	.icon-family-box {
 		display: flex;
-		width: 16vw;
+		width: 20vw;
 		height: 20vh;
 		flex-direction: column;
 		justify-content: center;
@@ -160,5 +162,19 @@ soft blue: kindness : #ABD7EB
 	.main-padded-width {
 		padding-left: 2vw;
 		padding-right: 2vw;
+	}
+
+	.banner {
+		min-height: 15vh;
+		color: #000000;
+		font-size: 1.5em;
+		margin: auto;
+		padding-top: 4vh;
+		padding-bottom: 4vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: "Lobster", cursive;
+		box-sizing: border-box;
 	}
 }

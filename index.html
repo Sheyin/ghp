@@ -4,7 +4,8 @@
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
 		<meta name="robots" content="noindex" />
 		<title>Global Healthcare Professionals, Inc.</title>
-		<link rel="stylesheet" href="./splashstyle.css" />
+		<link rel="stylesheet" href="./style/base.css" />
+		<link rel="stylesheet" href="./style/splash.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -16,99 +17,21 @@
 		<div id="splash-screen">
 			<div id="splash-logo-stripe">
 				<img
-					src="./images/ghplogo_smaller.png"
+					src="./images/ghplogo4.png"
 					alt="Global Healthcare Providers Logo"
 					id="splash-logo"
 					class="splash-item" />
 			</div>
 
 			<div id="button-grouping">
-				<a href="#banner1">
-					<button class="splash-item visitor-type-button" name="employer">I'm an employer</button>
+				<a href="employer.html">
+					<button class="splash-item" name="employer">I'm an employer</button>
 				</a>
-				<a href="#banner1">
-					<button class="splash-item visitor-type-button" name="nurse">I'm a nurse</button>
+				<a href="applicant.html">
+					<button class="splash-item" name="nurse">I'm a nurse</button>
 				</a>
 			</div>
 		</div>
-
-		<!-- this should be visible? after the iniitial selection is made-->
-		<main>
-			<div class="banner" id="banner1">Top-notch nurses are waiting for you!</div>
-
-			<section>
-				<h1>Who are <span class="red">we</span>?</h1>
-				<p id="who-are-we-text">
-					This text only shows up when "nurse" is selected, and will switch to employer-specific
-					text if that option is selected. By default this should be shown
-				</p>
-			</section>
-
-			<aside>
-				<h1>
-					What makes <span class="red">us</span>
-					stand out?
-				</h1>
-				<div class="icon-family">
-					<div class="icon-family-box">
-						<img src="./icons/first-aid-2789562_960_720.png" class="icon" alt="" />
-						<span>Welcoming candidates as family.</span>
-					</div>
-
-					<div class="icon-family-box">
-						<img src="./icons/bandage-5118693_960_720.png" class="icon" alt="" />
-						<span>Compassion and not just compensation.</span>
-					</div>
-
-					<div class="icon-family-box">
-						<img src="./icons/thermometer-5118701_960_720.png" class="icon" alt="" />
-						<span>Teamwork and ongoing support.</span>
-					</div>
-				</div>
-			</aside>
-
-			<!--
-	Who are we? (image: Outline of faces with ??? I don't really know at this point).
-
-Testimonials; personal journey
--->
-
-			<div>
-				<h1>Why choose <span class="red" id="visitor-choose-direct-object">Boston</span>?</h1>
-				<ul type="disc" id="visitor-choose-reasons">
-					<li>Not too big.</li>
-					<li>Large educated population</li>
-					<li>Safe place to raise a family?</li>
-				</ul>
-			</div>
-
-			<div>
-				<h1>Mission and <span class="red">Vision</span></h1>
-				<p>Make your dreams come true?</p>
-			</div>
-
-			<div id="contact-us">
-				<h1>Contact Us</h1>
-				<p>We're here for you.</p>
-				<form action="upload.php" method="post" enctype="multipart/form-data">
-					<label for="first_name">First Name:</label>
-					<input name="first_name" id="first_name" type="text" />
-
-					<label for="last_name">Last Name:</label>
-					<input name="last_name" id="last_name" type="text" />
-
-					<label for="email">E-mail:</label>
-					<input name="email" id="email" type="email" />
-
-					<label for="phone">Phone:</label>
-					<input name="phone" id="phone" type="tel" />
-
-					<input type="file" name="resume" id="resume" />
-
-					<input type="submit" value="Submit Resume" name="submit" id="submit-button" />
-				</form>
-			</div>
-		</main>
 
 		<script src="splashscript.js"></script>
 	</body>

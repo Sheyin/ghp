@@ -10,6 +10,7 @@ body {
 	width: 100vw;
 	margin: 0;
 	font-family: "Assistant", sans-serif;
+	font-size: 18px;
 	background-color: #abd7eb;
 	box-sizing: border-box;
 }
@@ -25,23 +26,33 @@ main {
 	height: 100%;
 	box-sizing: border-box;
 	margin-bottom: 0;
-	padding-left: 2vw;
-	padding-right: 2vw;
-}
-
-.main-full-width {
+	padding-top: 1em;
+	padding-bottom: 24px;
 	width: 100%;
 }
 
-.main-padded-width {
+section {
 	padding-left: 2vw;
 	padding-right: 2vw;
+}
+
+aside {
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+h1 {
+	font-family: "Roboto", sans-serif;
+}
+
+.red {
+	color: #ed2224;
 }
 
 .banner {
 	min-height: 15vh;
 	color: #000000;
-	background-color: #fbfbf8;
+	background-color: #d8e7fa;
 	font-size: 1.5em;
 	margin: auto;
 	padding-top: 4vh;
@@ -54,35 +65,13 @@ main {
 	width: 100%;
 }
 
-.red-stripe-top {
-	background-color: #abd7eb;
-	width: 100vw;
-	height: 2vh;
-	position: absolute;
-}
-
-.red-stripe-down {
-	background-color: #abd7eb;
-	width: 2vh;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-}
-
-#nav-red-bar {
-	background-color: #ff7f81;
-	height: 0.5vh;
-	border: 0;
-	opacity: 0.5;
-	margin-top: 5vh;
-}
-
 .icon-family {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	margin: auto;
+	margin-left: 4vw;
+	margin-right: 4vw;
 	flex: 1 1 0px;
 	font-size: 1.4em;
 	gap: 2vh;
@@ -90,7 +79,7 @@ main {
 
 .icon-family-box {
 	display: flex;
-	height: 12vh;
+	height: 16vh;
 	width: 100%;
 	gap: 3vw;
 	justify-content: start;
@@ -107,9 +96,6 @@ main {
 	height: 50px;
 	border-radius: 30%;
 	margin: 0;
-}
-
-.icon-family-box span {
 }
 
 #contact-us {
@@ -134,6 +120,11 @@ soft blue: kindness : #ABD7EB
 		max-width: 70%;
 	}
 
+	main {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
 	.icon-family {
 		display: flex;
 		flex-direction: row;
@@ -149,8 +140,8 @@ soft blue: kindness : #ABD7EB
 
 	.icon-family-box {
 		display: flex;
-		width: 20vw;
-		height: 20vh;
+		width: 32vw;
+		height: 36vh;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -166,8 +157,7 @@ soft blue: kindness : #ABD7EB
 
 	.banner {
 		min-height: 15vh;
-		color: #000000;
-		font-size: 1.5em;
+		font-size: 2.5em;
 		margin: auto;
 		padding-top: 4vh;
 		padding-bottom: 4vh;

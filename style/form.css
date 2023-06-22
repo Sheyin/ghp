@@ -1,20 +1,20 @@
 #contact-us {
-	background-color: #d8e7fa;
-	border-top: 1px solid #a5d4e0;
-	box-shadow: 0 2px 10px #a5d4e0;
-	padding-bottom: 10%;
-	margin-bottom: 8vh;
 	padding-top: 4vh;
-	padding-bottom: 4vh;
 	width: 100%;
 }
 
 form {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 3fr;
 	justify-items: end;
 	gap: 16px;
 	margin: auto;
+}
+
+form label {
+	font-family: "Roboto", sans-serif;
+	display: inline;
+	margin-right: 0;
 }
 
 input {
@@ -33,21 +33,21 @@ input {
 	border-radius: 24px;
 }
 
-form label {
-	display: inline;
-	margin-right: 0;
-}
-
 section {
 	width: 100%;
 }
 
 body {
 	width: 100%;
+	height: 100%;
+}
+
+html {
+	height: 100%;
 }
 
 @media only screen and (min-width: 600px) {
 	form {
-		max-width: 70%;
+		max-width: 80%;
 	}
 }

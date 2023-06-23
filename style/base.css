@@ -299,8 +299,11 @@ soft blue: kindness : #ABD7EB
 
 	.section-image {
 		grid-area: section-image;
-		display: block;
+		display: inline;
 		margin: auto;
+		min-height: 10px;
+		min-width: 5px;
+		margin-right: 2vw;
 	}
 
 	.section-image-block-upper {

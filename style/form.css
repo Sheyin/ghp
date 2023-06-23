@@ -1,11 +1,13 @@
 #contact-us {
-	padding-top: 4vh;
 	width: 100%;
+	padding-top: 4vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
 }
 
 form {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: 1fr 2fr;
 	justify-items: end;
 	gap: 16px;
 	margin: auto;
@@ -49,5 +51,6 @@ html {
 @media only screen and (min-width: 600px) {
 	form {
 		max-width: 80%;
+		grid-template-columns: 1fr 3fr;
 	}
 }

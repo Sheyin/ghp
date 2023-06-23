@@ -1,20 +1,38 @@
-const choiceButtons = Array.from(document.getElementsByClassName("visitor-type-button"));
+const choiceButtons = Array.from(document.getElementsByClassName("splash-button"));
+
+// These are constants dedicating which experience maps to which page
+const experiences = {
+	employer: "employer.html",
+	applicant: "applicant.html",
+};
 
 choiceButtons.forEach(button => button.addEventListener("click", visitorTypeSelection));
-const defaultExperienceType = "nurse";
+const defaultExperienceType = "applicant";
 let experienceType = localStorage.getItem("experiencetype") || defaultExperienceType;
 
 // if none defined, maybe change to redirect to splash screen with only the choice
 // maybe a modal popup?
 function visitorTypeSelection(event) {
-	const buttonPressed = event.target.name || nurse;
+	console.log(event);
+	const buttonPressed = event.target.name || applicant;
 	if (buttonPressed === "employer") {
 		localStorage.setItem("experiencetype", "employer");
 		experienceType = "employer";
 	} else {
-		localStorage.setItem("experiencetype", "nurse");
-		experienceType = "nurse";
+		localStorage.setItem("experiencetype", "applicant");
+		experienceType = "applicant";
 	}
+}
+
+// load the correct experience in the iframe
+function loadExperience() {
+	// Mostly temporary to redirect to splash screen
+	document
+		.getElementById("ghplogo")
+		.addEventListener("click", () => (document.location = "index.html"));
+
+	const iframe = document.getElementById("mainframe");
+	iframe.src = experiences[experienceType];
 }
 
 //setStringsBasedOnExperience();

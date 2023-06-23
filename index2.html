@@ -13,9 +13,9 @@
 			rel="stylesheet" />
 	</head>
 
-	<body>
+	<body onload="loadExperience()">
 		<header class="main-padded-width">
-			<img src="./images/ghplogo4.png" alt="" />
+			<img src="./images/ghplogo4.png" id="ghplogo" alt="" />
 			<nav>
 				<a href="./employer.html" target="mainframe">Employers</a>
 				<a href="./applicant.html" target="mainframe">Applicants</a>
@@ -23,8 +23,9 @@
 			</nav>
 		</header>
 
-		<iframe name="mainframe" src="./employer.html" frameborder="0" allowfullscreen> </iframe>
+		<iframe name="mainframe" id="mainframe" src="./employer.html" frameborder="0" allowfullscreen>
+		</iframe>
 
-		<script src="script.js"></script>
+		<script src="splashscript.js"></script>
 	</body>
 </html>

@@ -200,6 +200,17 @@ header > img {
 	margin-right: auto;
 	border-radius: 24px;
 }
+
+.section-image-half {
+	display: block;
+	max-width: 80vw;
+	max-height: 40vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4vh;
+	border-radius: 24px;
+}
+
 /*
 logo blue: #78D1EE
  white: #FBFBF8
@@ -295,6 +306,28 @@ soft blue: kindness : #ABD7EB
 			"section-upper section-image"
 			"section-lower section-image";
 		max-height: 50vh;
+	}
+
+	.section-image-block-2 {
+		display: grid;
+		grid-template-areas: "section-half section-image-half";
+		grid-template-columns: 3fr auto;
+		max-height: 50vh;
+		gap: 2vw;
+	}
+
+	.section-half {
+		grid-area: section-half;
+	}
+
+	.section-image-half {
+		grid-area: section-image-half;
+		display: inline;
+		margin: auto;
+		min-height: 10px;
+		min-width: 5px;
+		margin-right: 2vw;
+		max-width: 30vw;
 	}
 
 	.section-image {

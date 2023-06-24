@@ -1,4 +1,6 @@
-document.querySelector("form").addEventListener("submit", function (e) {
+console.log("script loaded");
+
+document.getElementById("submit-button").addEventListener("submit", function (e) {
 	e.preventDefault(); // Prevent the form from submitting normally
 
 	const formData = new FormData(this);
@@ -13,6 +15,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
 					// Email sent successfully
 					//window.location.href = 'user_page.php';
 					console.log("Email sent successfully!");
+					alert("Success!");
 				} else {
 					// Error sending email
 					alert("Error sending email.");

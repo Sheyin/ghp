@@ -1,4 +1,4 @@
-document.querySelector("form").addEventListener("submit", function (e) {
+/*document.querySelector("form").addEventListener("submit", function (e) {
 	e.preventDefault(); // Prevent the form from submitting normally
 
 	const formData = new FormData(this);
@@ -26,3 +26,4 @@ document.querySelector("form").addEventListener("submit", function (e) {
 
 	xhr.send(formData);
 });
+*/

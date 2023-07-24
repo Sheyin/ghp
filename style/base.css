@@ -76,6 +76,10 @@ header {
 	height: 80px;
 }
 
+.links {
+	margin-bottom: 20vh;
+}
+
 #back-arrow {
 	font-size: 3em;
 	text-decoration: none;
